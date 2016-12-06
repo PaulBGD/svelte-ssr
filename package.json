@@ -1,0 +1,45 @@
+{
+  "name": "svelte-ssr",
+  "version": "1.0.0",
+  "description": "Server-side renderer for Svelte components",
+  "main": "dist/svelte-ssr.js",
+  "files": [
+    "register.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "mocha",
+    "build": "rollup -c",
+    "pretest": "npm run build",
+    "lint": "eslint src",
+    "prepublish": "npm run lint && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sveltejs/svelte-ssr.git"
+  },
+  "keywords": [
+    "svelte",
+    "ssr",
+    "templates"
+  ],
+  "author": "Rich Harris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sveltejs/svelte-ssr/issues"
+  },
+  "homepage": "https://github.com/sveltejs/svelte-ssr#readme",
+  "devDependencies": {
+    "console-group": "^0.3.2",
+    "eslint": "^3.11.1",
+    "eslint-plugin-import": "^2.2.0",
+    "estree-walker": "^0.3.0",
+    "jsdom": "^9.8.3",
+    "magic-string": "^0.19.0",
+    "mocha": "^3.2.0",
+    "reify": "^0.4.4",
+    "rollup": "^0.36.4",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "source-map-support": "^0.4.6"
+  }
+}
