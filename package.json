@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "Server-side renderer for Svelte components",
   "main": "dist/svelte-ssr.js",
-  "files": [
-    "register.js",
-    "README.md"
-  ],
   "scripts": {
     "test": "mocha",
     "build": "rollup -c",
